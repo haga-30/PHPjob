@@ -1,0 +1,22 @@
+グループ関数
+
+問１
+SELECT AVG(score) FROM users;
+
+問２
+SELECT AVG(score) FROM users WHERE class = 'A';
+
+問３
+SELECT class, SUM(score) FROM users GROUP BY class;
+
+問４
+SELECT class, MAX(score) FROM users GROUP BY class;
+
+問５
+SELECT class, AVG(score) FROM users WHERE score >= 70 GROUP BY class;
+
+問６
+SELECT class, AVG(score) FROM users GROUP BY class having AVG(score) >= 60;
+
+問７
+SELECT class AS 'クラス名', MIN(score) AS '最低点', MAX(score) AS '最高点' FROM users WHERE score IS NOT NULL GROUP BY class;

@@ -1,0 +1,21 @@
+いろいろな条件指定方法（ORDER BY、DISTINCT）
+
+問１
+SELECT * FROM users ORDER BY age ASC;
+
+問２
+SELECT * FROM users ORDER BY score DESC, id ASC;
+
+
+問３
+SELECT * FROM users WHERE id > 3 ORDER BY score DESC;
+
+問４
+SELECT DISTINCT age FROM users;
+
+問５
+SELECT name, age FROM users WHERE name LIKE "鈴木%" ORDER BY age DESC;
+
+
+問６
+SELECT * FROM users WHERE score IS NOT NULL ORDER BY age ASC;

@@ -1,0 +1,11 @@
+トランザクション
+
+問１
+・UPDATE employees SET comm = 0 WHERE sal >= 450000;
+・SELECT * FROM employees;
+・ROLLBACK;
+・SELECT * FROM employees;
+・COMMIT;
+
+問２
+無回答

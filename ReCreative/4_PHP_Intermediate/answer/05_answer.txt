@@ -1,0 +1,20 @@
+単一行関数
+
+問１
+SELECT name, UPPER(name) from employees LIMIT 3;
+
+問２
+無回答
+
+問３
+無回答
+
+問４
+無回答
+
+問５
+無回答
+
+問６
+・UPDATE employees SET prefectures = SUBSTR(prefectures, 1, 3);
+・SELECT name, prefectures FROM employees;
