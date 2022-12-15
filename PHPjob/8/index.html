@@ -43,13 +43,16 @@
     function changeLang() {
       let jp_words = document.getElementById("jp_words");
       let en_words = document.getElementById("en_words");
-      if (document.getElementById("select")) {
-        let id = document.getElementById("select").value;
+      if (document.getElementById("select_item")) {
+        let id = document.getElementById("select_item").value;
         if (id == "selected_jpn") {
           jp_words.style.display = "";
           en_words.style.display = "none";
         } else if (id == "selected_en") {
           jp_words.style.display = "none";
+          en_words.style.display = "";
+        } else if (id == "selected_all") {
+          jp_words.style.display = "";
           en_words.style.display = "";
         }
       }
